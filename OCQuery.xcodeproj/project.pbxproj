@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		749EFDBD1B44341F000DF6F1 /* app.js in Resources */ = {isa = PBXBuildFile; fileRef = 749EFDBC1B44341F000DF6F1 /* app.js */; };
+		749EFDBF1B443466000DF6F1 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 749EFDBE1B443466000DF6F1 /* test.html */; };
+		749EFDC01B44347B000DF6F1 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 749EFDBE1B443466000DF6F1 /* test.html */; };
 		74ED8D1F1B43D80C006F6DA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ED8D1E1B43D80C006F6DA6 /* main.m */; };
 		74ED8D221B43D80C006F6DA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ED8D211B43D80C006F6DA6 /* AppDelegate.m */; };
 		74ED8D251B43D80C006F6DA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ED8D241B43D80C006F6DA6 /* ViewController.m */; };
@@ -14,7 +17,6 @@
 		74ED8D2A1B43D80C006F6DA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74ED8D291B43D80C006F6DA6 /* Images.xcassets */; };
 		74ED8D2D1B43D80C006F6DA6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74ED8D2B1B43D80C006F6DA6 /* LaunchScreen.xib */; };
 		74ED8D391B43D80C006F6DA6 /* OCQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74ED8D381B43D80C006F6DA6 /* OCQueryTests.m */; };
-		74ED8D451B43D878006F6DA6 /* cheerio.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 74ED8D441B43D878006F6DA6 /* cheerio.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		749EFDBC1B44341F000DF6F1 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
+		749EFDBE1B443466000DF6F1 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		74ED8D191B43D80C006F6DA6 /* OCQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ED8D1D1B43D80C006F6DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74ED8D1E1B43D80C006F6DA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,7 +45,6 @@
 		74ED8D321B43D80C006F6DA6 /* OCQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ED8D371B43D80C006F6DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74ED8D381B43D80C006F6DA6 /* OCQueryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCQueryTests.m; sourceTree = "<group>"; };
-		74ED8D441B43D878006F6DA6 /* cheerio.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cheerio.min.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		74ED8D351B43D80C006F6DA6 /* OCQueryTests */ = {
 			isa = PBXGroup;
 			children = (
+				749EFDBE1B443466000DF6F1 /* test.html */,
 				74ED8D381B43D80C006F6DA6 /* OCQueryTests.m */,
 				74ED8D361B43D80C006F6DA6 /* Supporting Files */,
 			);
@@ -133,7 +137,7 @@
 		74ED8D431B43D845006F6DA6 /* Javascript */ = {
 			isa = PBXGroup;
 			children = (
-				74ED8D441B43D878006F6DA6 /* cheerio.min.js */,
+				749EFDBC1B44341F000DF6F1 /* app.js */,
 			);
 			path = Javascript;
 			sourceTree = "<group>";
@@ -220,7 +224,8 @@
 			files = (
 				74ED8D281B43D80C006F6DA6 /* Main.storyboard in Resources */,
 				74ED8D2D1B43D80C006F6DA6 /* LaunchScreen.xib in Resources */,
-				74ED8D451B43D878006F6DA6 /* cheerio.min.js in Resources */,
+				749EFDBD1B44341F000DF6F1 /* app.js in Resources */,
+				749EFDC01B44347B000DF6F1 /* test.html in Resources */,
 				74ED8D2A1B43D80C006F6DA6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749EFDBF1B443466000DF6F1 /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +442,7 @@
 				74ED8D3E1B43D80C006F6DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74ED8D3F1B43D80C006F6DA6 /* Build configuration list for PBXNativeTarget "OCQueryTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +451,7 @@
 				74ED8D411B43D80C006F6DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
