@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7456A76B1B4576A000BFD3EC /* OCQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 7456A76A1B4576A000BFD3EC /* OCQuery.m */; };
 		749EFDBD1B44341F000DF6F1 /* app.js in Resources */ = {isa = PBXBuildFile; fileRef = 749EFDBC1B44341F000DF6F1 /* app.js */; };
 		749EFDBF1B443466000DF6F1 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 749EFDBE1B443466000DF6F1 /* test.html */; };
 		749EFDC01B44347B000DF6F1 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 749EFDBE1B443466000DF6F1 /* test.html */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7456A7691B4576A000BFD3EC /* OCQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCQuery.h; sourceTree = "<group>"; };
+		7456A76A1B4576A000BFD3EC /* OCQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCQuery.m; sourceTree = "<group>"; };
 		749EFDBC1B44341F000DF6F1 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
 		749EFDBE1B443466000DF6F1 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		74ED8D191B43D80C006F6DA6 /* OCQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +133,8 @@
 		74ED8D421B43D833006F6DA6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7456A7691B4576A000BFD3EC /* OCQuery.h */,
+				7456A76A1B4576A000BFD3EC /* OCQuery.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7456A76B1B4576A000BFD3EC /* OCQuery.m in Sources */,
 				74ED8D251B43D80C006F6DA6 /* ViewController.m in Sources */,
 				74ED8D221B43D80C006F6DA6 /* AppDelegate.m in Sources */,
 				74ED8D1F1B43D80C006F6DA6 /* main.m in Sources */,

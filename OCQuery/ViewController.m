@@ -26,6 +26,8 @@
 
     NSError *error;
     JSContext *context = [[JSContext alloc] init];
+    
+
     [context setExceptionHandler:^(JSContext *context, JSValue *value) {
         NSLog(@"error:%@", value);
     }];
@@ -38,16 +40,34 @@
     
     NSString *html_path = [[NSBundle mainBundle]pathForResource:@"test" ofType:@"html"];
     NSString *html = [NSString stringWithContentsOfFile:html_path encoding:NSUTF8StringEncoding error:&error];
-    //    context[@"html"] = html;
-    JSValue *loadHTML = context[@"loadHTML"];
+    JSValue *loadHTML = [context objectForKeyedSubscript:@"loadHTML"];
     [loadHTML callWithArguments:@[html]];
-    JSValue *queryWithCss = context[@"queryWithCss"];
+    JSValue *queryWithCss = [context objectForKeyedSubscript:@"queryWithCss"];
     JSValue *value = [queryWithCss callWithArguments:@[@".sqv-item .sqv-hd"]];
     for (NSDictionary *dict in [value toArray]) {
-        NSLog(@"%@",[dict valueForKey:@"text" ]);
+        NSLog(@"%@",[dict valueForKey:@"val" ]);
+    }
+    
+    value = [queryWithCss callWithArguments:@[@".sqv-item",@{@"url":@"a",@"img":@"img"}]];
+    for (NSDictionary *dict in [value toArray]) {
+        NSLog(@"%@",[dict valueForKey:@"url" ]);
     }
     
     NSLog(@"OK");
+    
+    NSURL *url = [NSURL URLWithString:@"http://weixin.sogou.com/weixinwap?query=stuq&fr=sgsearch&type=1"];
+    html = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    [loadHTML callWithArguments:@[html]];
+    value = [queryWithCss callWithArguments:@[@".account_box_lst .account_box",
+             @{
+    @"name":@".lst_wechat_txt",
+    @"desc":@".lst_wechat_txt2",
+    @"image":@".account_thumb img",
+    @"no" : @".lst_wechat_txt:contains('gh_')"
+               }]];
+    for (NSDictionary *dict in [value toArray]) {
+        NSLog(@"%@,%@",[dict valueForKey:@"name" ],[dict valueForKey:@"desc" ]);
+    }
 }
 
 

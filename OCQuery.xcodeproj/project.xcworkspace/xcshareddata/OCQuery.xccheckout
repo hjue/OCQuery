@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2407EA8F-165B-4D2B-B40D-BCDC7FF7DE5B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OCQuery</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5EB02334ED74191394BA6F2CC705DB9A4BDD85DD</key>
+		<string>github.com:hjue/OCQuery.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OCQuery.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5EB02334ED74191394BA6F2CC705DB9A4BDD85DD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:hjue/OCQuery.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5EB02334ED74191394BA6F2CC705DB9A4BDD85DD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5EB02334ED74191394BA6F2CC705DB9A4BDD85DD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OCQuery</string>
+		</dict>
+	</array>
+</dict>
+</plist>
